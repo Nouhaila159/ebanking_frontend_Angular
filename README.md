@@ -35,46 +35,52 @@ It's important to note that this readme primarily highlights the frontend part o
 <h2>Access Page Management</h2>
 
 <h3>- JWT_token</h3>
-![Login](captures/jwt_token.PNG)
+<img src="captures/jwt_token.PNG">
+
 
 <h2>Admin Pages</h2>
 
 <h3>- Login</h3>
-![Login](captures/login_admin.PNG)
+<img src="captures/login_admin.PNG">
 
 <h3>- Adding a New Customer</h3>
-![Validation of Form Fields](captures/new_customer_form_validate_champs_admin.PNG)
-![Success Message after Adding](captures/new_customer_form_validate_champs_message_sucess_admin.PNG)
+<img src="captures/new_customer_form_validate_champs_admin.PNG">
+<img src="captures/new_customer_form_validate_champs_message_sucess_admin.PNG">
 
 <h3>- Search</h3>
-![Search](captures/search_customer_admin.PNG)
+<img src="captures/search_customer_admin.PNG">
+
 
 <h3>- Deleting a Customer</h3>
-![Deleting a Customer](captures/delete_customer_admin.PNG)
+<img src="captures/delete_customer_admin.PNG">
+
 
 <h3>- Operations</h3>
 <h4> Credit </h4>
-![Credit Operation](captures/credit_operation_admin.PNG)
-![After Credit Operation](captures/apres_credit_operation_admin.PNG)
-<h4>  Debit</h4>
-![Debit Operation](captures/debit_operation_admin.PNG)
-![After Debit Operation](captures/apres_debit_operation_admin.PNG)
-<h4>  Transfer </h4>
-![Transfer Operation](captures/transfer_operation_admin.PNG)
-![After Transfer Operation](captures/apres_tansfer_operation_admin.PNG)
+<img src="captures/credit_operation_admin.PNG">
+<img src="captures/apres_credit_operation_admin.PNG">
 
+<h4>  Debit</h4>
+<img src="captures/debit_operation_admin.PNG">
+<img src="captures/apres_debit_operation_admin.PNG">
+
+<h4>  Transfer </h4>
+
+<img src="captures/transfer_operation_admin.PNG">
+<img src="captures/apres_tansfer_operation_admin.PNG">
 
 
 <h2>User Pages</h2>
 
 <h3>- Login</h3>
-![Login](captures/login_user.PNG)
+<img src="captures/login_user.PNG">
+
 
 <h3>- Search</h3>
-![Search by Name](captures/search_customer_user_by_nom.PNG)
+<img src="captures/search_customer_user_by_nom.PNG">
 
 <h3>- Search for an Account</h3>
-![Search for an Account](captures/account_user.PNG)
+<img src="captures/account_user.PNG">
 
 
 <h2>Conclusion</h2>
