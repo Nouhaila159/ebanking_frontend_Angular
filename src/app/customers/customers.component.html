@@ -1,0 +1,68 @@
+<div class="container mt-2">
+  <!-- Utilisation de *ngIf pour gérer le cas où les données sont en cours de chargement -->
+  <ng-container *ngIf="customers | async as listCustomers; else failureOrLoading">
+
+    <!-- Contenu à afficher lorsque les données sont disponibles -->
+    <div class="card">
+      <div class="card-header">Customers</div>
+      <div class="card-body">
+        <div *ngIf="searchFormGroup">
+          <!--{{this.searchFormGroup?.value | json}}-->
+          <form [formGroup]="searchFormGroup" (ngSubmit)="handleSearchCustomers()">
+            <div class="input-group">
+              <label class="input-group-text">Keyword</label>
+              <input type="text" formControlName="keyword" class="form-control">
+              <button class="btn btn-info">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <table class="table mt-2">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th *ngIf="authService.roles.includes('ADMIN')">Actions</th>
+            <th>Accounts</th>
+
+
+          </tr>
+          </thead>
+          <tbody>
+          <!-- Utilisation de *ngFor pour itérer sur la liste de clients -->
+          <tr *ngFor="let c of listCustomers">
+            <td>{{c.id}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.email}}</td>
+            <td *ngIf="authService.roles.includes('ADMIN')">
+              <button (click)="handleDeleteCustomer(c)" class="btn btn-danger" >
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+            <td>
+              <button (click)="handleCustomerAccounts(c)" class="btn btn-success">
+                Accounts
+              </button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- Affiche le message d'erreur en cas d'échec de la récupération des données -->
+  <ng-template #failureOrLoading>
+    <ng-container *ngIf="errorMessage";else loading>
+      <div class="text-danger">
+        {{errorMessage}}
+      </div>
+    </ng-container>
+    <ng-template #loading>
+      Loading....
+    </ng-template>
+  </ng-template>
+</div>
