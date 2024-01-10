@@ -149,6 +149,7 @@ Conclusion
 <h3>- Search for an Account</h3>
   ![Search for an Account](captures/account_user.PNG)
 
+
 <h2>Conclusion</h2>
 >>>>>>> 4b10a2a (first commit)
 In conclusion, this project has successfully delivered a robust and secure frontend application that effectively meets the requirements of banking management. The clear code structure, successful implementation of features, and integration of an exemplary security system attest to the quality of the design. This work marks a significant step in providing a comprehensive and reliable solution for the banking sector.
